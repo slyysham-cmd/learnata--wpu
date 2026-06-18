@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>الملف الشخصي</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+.profile-box{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #5b34c9;
+margin-bottom:15px;
+}
+
+.logo-small{
+width:120px;
+margin-bottom:10px;
+}
+
+.info{
+margin-top:15px;
+line-height:1.8;
+font-size:16px;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="header">
-Learnata WPU
+    <img src="images/logo.png" class="logo-small">
+    <span>Wataniya Private University (WPU)</span>
 </div>
 
-<div class="card">
+<div class="sidebar">
 
-<h2>الملف الشخصي</h2>
+<a href="index.html">🏠 الرئيسية</a>
+<a href="profile.html">👤 الملف الشخصي</a>
+<a href="grades.html">📊 كشف العلامات</a>
+<a href="semesters.html">🎓 حالتي عبر الفصول</a>
 
-<p><b>الاسم:</b> شام خالد صليعي</p>
+</div>
 
-<p><b>الرقم الجامعي:</b> 202310199</p>
+<div class="content">
 
-<p><b>الكلية:</b> كلية الصيدلة</p>
+<div class="profile-box">
 
-<p><b>التخصص:</b> الصيدلة</p>
+    <img src="images/profile.jpg" class="profile-img">
 
-<p><b>السنة:</b> الثالثة</p>
+    <h2>شام خالد صليعي</h2>
 
-<p><b>البريد:</b> sh_am2.2@icloud.com</p>
+    <div class="info">
+        <p>📌 الرقم الجامعي: 202310199</p>
+        <p>🎓 كلية الصيدلة</p>
+        <p>📚 السنة الدراسية: الثالثة</p>
+        <p>📧 البريد: sh_am2.2@icloud.com</p>
+        <p>📱 الجوال: 0933232153</p>
+        <p>🏛️ الجامعة: Wataniya Private University</p>
+    </div>
 
-<p><b>الهاتف:</b> 0933232153</p>
+</div>
 
 </div>
 
