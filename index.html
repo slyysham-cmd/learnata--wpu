@@ -7,89 +7,107 @@
 <title>Learnata WPU</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<div class="header">
-    <img src="images/logo.png" class="logo">
-    <span>الجامعة الوطنية الخاصة</span>
+<div class="top-header">
+
+<div class="user-info">
+<img src="images/profile.jpg" class="top-profile">
+
+<div>
+<h2>شام خالد صليعي</h2>
+<p>202310199</p>
 </div>
+</div>
+
+<div class="top-icons">
+<button>🌐 عربي</button>
+<button>🔔</button>
+<button>⚙️</button>
+</div>
+
+</div>
+
+<div class="layout">
 
 <div class="sidebar">
 
-    <a href="index.html">🏠 الرئيسية</a>
+<div class="menu-item">👤 ملفي</div>
+<div class="submenu">
+<a href="profile.html">الشخصي</a>
+<a href="profile.html">الأكاديمي</a>
+<a href="profile.html">المالي</a>
+</div>
 
-    <a href="profile.html">👤 الملف الشخصي</a>
+<div class="menu-item">📅 التقويم</div>
+<div class="submenu">
+<a href="#">التقويم الأكاديمي</a>
+<a href="#">جدول المحاضرات</a>
+<a href="#">جدول الامتحانات</a>
+</div>
 
-    <a href="grades.html">📊 كشف العلامات</a>
+<div class="menu-item">📊 الدرجات</div>
+<div class="submenu">
+<a href="semesters.html">حالتي عبر الفصول</a>
+<a href="grades.html">كشف العلامات</a>
+</div>
 
-    <a href="semesters.html">🎓 حالتي عبر الفصول</a>
+<div class="menu-item">📝 التسجيل</div>
+<div class="submenu">
+<a href="#">المقررات المتبقية</a>
+<a href="#">تسجيل المقررات</a>
+</div>
+
+<div class="menu-item">🏛 الخدمات</div>
+<div class="submenu">
+<a href="#">المكتبة الإلكترونية</a>
+<a href="#">السكن</a>
+</div>
 
 </div>
 
-<div class="content">
+<div class="main-content">
 
 <div class="card">
+<h1>مرحباً شام 💜</h1>
 
-<h1>شام خالد صليعي</h1>
+<p>
+مرحباً بك في النظام الأكاديمي الخاص بك.
+</p>
 
-<p>الرقم الجامعي: 202310199</p>
+<p>
+كلية الصيدلة - السنة الثالثة
+</p>
 
-<p>كلية الصيدلة</p>
-
-<p>التخصص: الصيدلة</p>
-
-<p>السنة الدراسية: الثالثة</p>
-
-<p>الفصل الحالي: الثاني 2025 / 2026</p>
-
-</div>
-
-<div class="stats">
-
-<div class="stat-box">
-<div class="stat-number">46.00%</div>
-المعدل التراكمي
-</div>
-
-<div class="stat-box">
-<div class="stat-number">84</div>
-أعلى علامة حديثة
-</div>
-
-<div class="stat-box">
-<div class="stat-number">3</div>
-السنة الدراسية
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>آخر النتائج المضافة</h2>
-
-<ul>
-
-<li>علم العقاقير (1) — 85</li>
-
-<li>الكيمياء العضوية (2) — 75</li>
-
-<li>الكيمياء الفيزيائية الصيدلانية — 73</li>
-
-<li>الكيمياء التحليلية (2) — 55</li>
-
-<li>مهارات التقارير العلمية — 84</li>
-
-<li>الأحياء الدقيقة (1) — 64</li>
-
-</ul>
+<p>
+المعدل التراكمي: 1.87
+</p>
 
 </div>
 
 </div>
+
+</div>
+
+<script>
+
+let items=document.querySelectorAll(".menu-item");
+
+items.forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+let next=item.nextElementSibling;
+
+next.classList.toggle("show");
+
+});
+
+});
+
+</script>
 
 </body>
-
 </html>
