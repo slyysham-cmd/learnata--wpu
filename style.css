@@ -116,3 +116,20 @@ gap:15px;
 margin-top:0;
 color:#6f47e8;
 }
+.menu-item{
+padding:18px;
+font-size:18px;
+font-weight:bold;
+border-bottom:1px solid #eee;
+cursor:pointer;
+background:white;
+}
+
+.submenu a{
+font-size:15px;
+padding:12px 35px;
+}
+
+.sidebar{
+overflow-y:auto;
+}
