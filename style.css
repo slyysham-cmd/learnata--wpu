@@ -1,89 +1,113 @@
-body{
-margin:0;
-font-family:Tahoma, Arial;
-background:#f5f5f5;
-direction:rtl;
-}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
-.header{
-background:linear-gradient(90deg,#6a3fd8,#8c63ff);
-color:white;
-padding:15px;
-display:flex;
-align-items:center;
-gap:15px;
-font-size:22px;
-font-weight:bold;
-}
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learnata WPU</title>
 
-.logo-small{
-width:60px;
-height:60px;
-object-fit:contain;
-background:white;
-border-radius:10px;
-padding:5px;
-}
+<link rel="stylesheet" href="style.css">
+</head>
 
-.sidebar{
-position:fixed;
-right:0;
-top:90px;
-width:240px;
-background:white;
-height:calc(100vh - 90px);
-overflow:auto;
-box-shadow:-2px 0 10px rgba(0,0,0,0.1);
-}
+<body>
 
-.sidebar a{
-display:block;
-padding:15px;
-text-decoration:none;
-color:#333;
-border-bottom:1px solid #eee;
-}
+<div class="top-header">
 
-.sidebar a:hover{
-background:#f3efff;
-color:#6a3fd8;
-}
+<div class="user-info">
+<img src="images/profile.jpg" class="top-profile">
 
-.content{
-margin-right:260px;
-padding:20px;
-}
+<div>
+<h2>شام خالد صليعي</h2>
+<p>202310199</p>
+</div>
+</div>
 
-.card{
-background:white;
-padding:20px;
-border-radius:15px;
-margin-bottom:20px;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
-}
+<div class="top-icons">
+<button>🌐 عربي</button>
+<button>🔔</button>
+<button>⚙️</button>
+</div>
 
-.profile-img{
-width:140px;
-height:140px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid #6a3fd8;
-}
+</div>
 
-table{
-width:100%;
-border-collapse:collapse;
-background:white;
-}
+<div class="layout">
 
-th{
-background:#6a3fd8;
-color:white;
-padding:12px;
-}
+<div class="sidebar">
 
-td{
-padding:10px;
-border:1px solid #ddd;
-text-align:center;
-}
+<div class="menu-item">👤 ملفي</div>
+<div class="submenu">
+<a href="profile.html">الشخصي</a>
+<a href="profile.html">الأكاديمي</a>
+<a href="profile.html">المالي</a>
+</div>
+
+<div class="menu-item">📅 التقويم</div>
+<div class="submenu">
+<a href="#">التقويم الأكاديمي</a>
+<a href="#">جدول المحاضرات</a>
+<a href="#">جدول الامتحانات</a>
+</div>
+
+<div class="menu-item">📊 الدرجات</div>
+<div class="submenu">
+<a href="semesters.html">حالتي عبر الفصول</a>
+<a href="grades.html">كشف العلامات</a>
+</div>
+
+<div class="menu-item">📝 التسجيل</div>
+<div class="submenu">
+<a href="#">المقررات المتبقية</a>
+<a href="#">تسجيل المقررات</a>
+</div>
+
+<div class="menu-item">🏛 الخدمات</div>
+<div class="submenu">
+<a href="#">المكتبة الإلكترونية</a>
+<a href="#">السكن</a>
+</div>
+
+</div>
+
+<div class="main-content">
+
+<div class="card">
+<h1>مرحباً شام 💜</h1>
+
+<p>
+مرحباً بك في النظام الأكاديمي الخاص بك.
+</p>
+
+<p>
+كلية الصيدلة - السنة الثالثة
+</p>
+
+<p>
+المعدل التراكمي: 1.87
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let items=document.querySelectorAll(".menu-item");
+
+items.forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+let next=item.nextElementSibling;
+
+next.classList.toggle("show");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
