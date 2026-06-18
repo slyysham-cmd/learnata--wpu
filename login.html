@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسجيل الدخول</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.login-box{
+width:400px;
+max-width:90%;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,0.1);
+margin:80px auto;
+text-align:center;
+}
+
+.login-logo{
+width:120px;
+margin-bottom:20px;
+}
+
+.login-box input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.login-btn{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#6f47e8;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+.error{
+color:red;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<img src="images/logo.png" class="login-logo">
+
+<h2>Wataniya Private University</h2>
+
+<p>learnata.wpu.edu.sy</p>
+
+<input type="text" id="username" placeholder="اسم المستخدم">
+
+<input type="password" id="password" placeholder="كلمة المرور">
+
+<button class="login-btn" onclick="login()">
+تسجيل الدخول
+</button>
+
+<p id="error" class="error"></p>
+
+</div>
+
+<script>
+
+function login(){
+
+let user=document.getElementById("username").value;
+let pass=document.getElementById("password").value;
+
+if(user==="202310199" && pass==="sham12345"){
+
+window.location.href="index.html";
+
+}
+
+else{
+
+document.getElementById("error").innerText="بيانات الدخول غير صحيحة";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
