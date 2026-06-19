@@ -108,8 +108,7 @@ window.location.href="login.html";
 <a href="#">الحرم الذكي</a>
 </div>
 
-<div class="menu-item">🚪 تسجيل الخروج</div>
-
+<div class="menu-item" onclick="logout()">🚪 تسجيل الخروج</div>
 </div>
 
 <div class="main-content">
@@ -147,7 +146,13 @@ next.classList.toggle("show");
 });
 
 });
+function logout(){
 
+sessionStorage.removeItem("logged");
+
+window.location.href="login.html";
+
+}
 </script>
 
 </body>
