@@ -156,3 +156,52 @@ margin-bottom:10px;
 .stat-box p{
 color:#666;
 }
+.top-header{
+background:linear-gradient(135deg,#6f47e8,#9a7df0);
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+border-radius:0 0 20px 20px;
+box-shadow:0 3px 15px rgba(0,0,0,0.15);
+}
+
+.university{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.header-logo{
+width:80px;
+height:80px;
+object-fit:contain;
+background:white;
+padding:5px;
+border-radius:12px;
+}
+
+.user-info{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.top-profile{
+width:80px;
+height:80px;
+border-radius:50%;
+border:4px solid white;
+object-fit:cover;
+}
+
+.top-icons button{
+background:rgba(255,255,255,0.15);
+border:none;
+padding:10px 15px;
+border-radius:12px;
+color:white;
+cursor:pointer;
+margin-right:5px;
+}
