@@ -159,3 +159,11 @@ padding:15px;
 color:#777;
 font-size:14px;
 }
+.card h3{
+color:#6f47e8;
+margin-top:0;
+}
+
+.card p{
+line-height:1.9;
+}
