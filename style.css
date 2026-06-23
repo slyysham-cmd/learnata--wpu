@@ -168,11 +168,16 @@ margin-top:0;
 line-height:1.9;
 }
 .pass{
-color:green;
+color:#1aa34a;
 font-weight:bold;
 }
 
 .fail{
-color:red;
+color:#d62828;
 font-weight:bold;
+}
+
+.page-title{
+color:#6f47e8;
+margin-bottom:20px;
 }
