@@ -167,3 +167,12 @@ margin-top:0;
 .card p{
 line-height:1.9;
 }
+.pass{
+color:green;
+font-weight:bold;
+}
+
+.fail{
+color:red;
+font-weight:bold;
+}
